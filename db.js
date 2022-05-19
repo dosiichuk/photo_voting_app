@@ -3,10 +3,15 @@ const mongoose = require('mongoose');
 // func for loading example data
 const loadTestData = require('./testData');
 
+let dbUrl = process.env.DATABASE.replace(
+  '<password>',
+  process.env.DATABASE_PASSWORD
+);
+
 const connectToDB = () => {
 
   // connect to DB
-  mongoose.connect('mongodb://localhost:27017/photosDB', { useNewUrlParser: true, useUnifiedTopology: true });
+  mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
   const db = mongoose.connection;
 
   // on success

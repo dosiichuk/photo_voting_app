@@ -18,20 +18,6 @@ const loadTestData = async () => {
       votes: 0,
     },
     {
-      title: 'Just another day',
-      author: 'Dustin Martinez',
-      email: 'dustinmartinez@example.com',
-      src: 'photo-1552642986-ccb41e7059e7.jpg',
-      votes: 0,
-    },
-    {
-      title: 'the Pro',
-      author: 'Ronald Tomasson',
-      email: 'prophoto@example.com',
-      src: 'photo-1553267751-1c148a7280a1.jpg',
-      votes: 0,
-    },
-    {
       title: 'Pink, pink, PINK!',
       author: 'Katie Dolberg',
       email: 'katie123@example.com',
